@@ -1,0 +1,176 @@
+
+*{
+    background-color: #674636;/*rgb(170, 179, 150); /*rgb(130, 90, 50);*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 5rem;
+    flex-direction: column;
+    
+  
+    
+
+}
+
+
+.navbar a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border: 2px solid ;
+    margin-bottom: 20px ;
+    display: inline-block;
+    width: 20rem;
+    border-radius: 8px;
+    background-color: rgba(225, 225, 225, 0.8);
+    color: rgb(46, 39, 29);
+    transition: transform 0.2s linear, background-color 0.5s ease-out;
+    font-family: sans-serif;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1);
+    text-align: center;
+    letter-spacing: 1px;
+    background: linear-gradient(120deg, rgba(220, 220, 260, 0.5), rgba(225, 225, 225, 0.8));
+   
+   
+}
+
+
+
+
+
+.navbar a:hover {
+    background-color: #674636;
+    color: white; 
+    transform: scale(1.05);   
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 1);     
+}
+.navbar a:active {
+    transform: scale(0.95);  
+    background-color: #bccfe4; 
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.8);
+}
+.border{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+
+}
+
+.border a{
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    transform: none;
+    transition: font-size 0.5s ease, color 0.5s ease;
+    background: none;
+    
+}
+.border a.medsos {
+    transition: none;  
+    transform: none;   
+    background-color: transparent; 
+    box-shadow: none; 
+    margin-top: 0.1rem;
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    transition: transform 0.3s ease, color 0.3s ease, font-size 0.1s ease;
+    text-transform: uppercase;
+    color: #181C14;
+    
+}
+
+.border a.medsos:hover {
+    font-size: 0.8rem; 
+    color: #e7e1d9;  
+    transform: translateY(-3px); /* Efek hover menaikkan elemen */
+    letter-spacing: 0.1rem;
+}
+
+.bio{
+    font-family: Georgia, serif;
+    padding : 1.5rem;
+    text-align: center;
+    margin: 0.5rem auto;
+    
+    
+}
+.bio h2{
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #181C14;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    
+
+}
+
+
+.photo{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1.5rem auto;
+    box-shadow: 4px 4px rgba(0, 0,0, 0.7);
+   
+    
+}
+
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 2rem 1rem; /* Kurangi padding untuk layar lebih kecil */
+    }
+
+    .navbar a {
+        font-size: 1rem; /* Ubah ukuran font untuk layar lebih kecil */
+        width: 18rem;
+        padding: 0.8rem;
+    }
+
+    .bio h2 {
+        font-size: 0.9rem; /* Ubah ukuran font di bio */
+    }
+
+    .photo {
+        width: 7rem; /* Ubah ukuran foto di layar kecil */
+        height: 7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 1rem 0; 
+    }
+
+    .navbar a {
+        font-size: 1rem;
+        width: 15rem;
+        padding: 0.6rem;
+        
+    }
+
+    .bio h2 {
+        font-size: 0.8rem; /* Ukuran font lebih kecil untuk bio */
+    }
+
+    .photo {
+        width: 7rem; /* Ukuran foto lebih kecil untuk ponsel */
+        height: 7rem;
+    }
+}
+
+
